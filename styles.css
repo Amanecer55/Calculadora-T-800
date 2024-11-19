@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: #70b0f5;
+}
+/*::Titulo:::*/
+
+.Titulo{
+    position: absolute;
+    left: 9%;
+    top: 20%;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.Titulo2{
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.Titulo3{
+    position: absolute;
+    left: 41%;
+    top: 19%;
+    font-size: 21px;
+    z-index: 1;
+}
+
+/*::Ingrese los datos:::*/
+
+.label1 { 
+    position: absolute;
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 15px;
+    top: 29%;
+    z-index: 8;
+    left: 4%;
+}
+
+.label2 { 
+    position: absolute;
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 15px;
+    top: 40%;
+    z-index: 8;
+    left: 4%;
+}
+
+.label3 { 
+    position: absolute;
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 15px;
+    top: 51.2%;
+    z-index: 8;
+    left: 4%;
+}
+
+.label4 { 
+    position: absolute;
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 15px;
+    top: 62%;
+    z-index: 8;
+    left: 4%;
+}
+
+.contenedor{
+    border-radius: 4px;
+}
+
+input[id="x"] { 
+    position: absolute;
+    width: 15%; 
+    padding: 10px;
+    top: 33%;
+    left: 4%;
+    border: 1px solid #ccc; 
+    border-radius: 4px; font-size: 16px;
+}
+
+input[id="y"] { 
+    position: absolute;
+    width: 15%; 
+    padding: 10px;
+    top: 44%;
+    left: 4%;
+    border: 1px solid #ccc; 
+    border-radius: 4px; font-size: 16px;
+
+}
+
+input[id="width"] { 
+    position: absolute;
+    width: 15%; 
+    padding: 10px;
+    top: 55%;
+    left: 4%;
+    border: 1px solid #ccc; 
+    border-radius: 4px; font-size: 16px;
+
+}
+
+input[id="height"] { 
+    position: absolute;
+    width: 15%; 
+    padding: 10px;
+    top: 66%;
+    left: 4%;
+    border: 1px solid #ccc; 
+    border-radius: 4px; font-size: 16px;
+
+}
+
+
+/*::Interfaz de inicio:::*/
+
+.InterfazInicio{
+    position: absolute;
+    border: 1px solid #001;
+    height: 540px;
+    width: 300px;
+    left: 2%;
+    top: 18%;
+    border-radius: 4%;
+    background-color: white;
+}
+
+.InterfazPoligonos{
+    position: absolute;
+    border: 1px solid #001;
+    height: 540px;
+    width: 230px;
+    left: 23%;
+    top: 18%;
+    border-radius: 4%;
+    background-color: white;
+}
+
+canvas {
+    position: absolute;
+    border: 1px solid #151515;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    left: 40%;
+    top: 18%;
+    border-radius: 2%;
+    width: 800px;
+    height: 540px;
+}
+
+/*::Interfaz graficadora:::*/
+
+/*.InterfazGraficadora{
+    position: absolute;
+    border: 1px solid #001;
+    height: 540px;
+    width: 900px;
+    left: 40%;
+    top: 18%;
+    border-radius: 4%; 
+    background-color: white;
+}*/
+
+.Botn{
+    width: 130px;
+    height: 90px;
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: all 300ms ease;
+    z-index: 2;
+    background-color: white;
+    border: 2px solid #001;
+}
+.Botn:hover{
+    background-color: #c8e5f5;
+}
+.Botn:active{
+    background-color: #c8e5f5;
+}
+.Botn2{
+    width: 130px;
+    height: 90px;
+    position: absolute;
+    left: 26%;
+    top: 46%;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: all 300ms ease;
+    z-index: 3;
+    background-color: white;
+    border: 2px solid #001;
+}
+.Botn2:hover{
+    background-color: #c8e5fe;
+}
+.Botn2:active{
+    background-color: #c8e5f5;
+}
+
+.Botn3{
+    width: 130px;
+    height: 90px;
+    position: absolute;
+    left: 26%;
+    top: 62%;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: all 300ms ease;
+    z-index: 3;
+    background-color: white;
+    border: 2px solid #001;
+}
+.Botn3:hover{
+    background-color: #c8e5f5;
+}
+.Botn3:active{
+    background-color: #c8e5f5;
+}
+
+.button { 
+    position: absolute;
+    top: 76%;
+    left: 4%;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 4px; 
+    background-color: #001; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+} 
+ button:hover { 
+    background-color: #0056b3; 
+}
+
+.buttonB {
+    position: absolute;
+    top: 76%;
+    left: 10%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #001;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonB:hover {
+    background-color: #0056b3;
+}
+
+
+/*::Figuras geometricas:::*/
+
+.square { 
+    position: absolute;
+    width: 59px;
+    height: 60px;
+    left: 28.2%;
+    top: 32%;
+    background-color: #4f8ed0; 
+    border: 2px solid #001;
+    z-index: 7;
+}
+
+.rectangle{
+    position: absolute;
+    width: 85px;
+    height: 60px;
+    left: 27.5%;
+    top: 48%;
+    background-color: #714fd0; 
+    border: 2px solid #001;
+    z-index: 7;
+}
+
+.rhombus { 
+    position: absolute;
+    width: 50px; 
+    height: 50px; 
+    background-color: #DC3545; 
+    transform: rotate(45deg); 
+    top: 65%;
+    left: 28.5%;
+    z-index: 7;
+}
+
+/*::nubes:::*/
+.nubeAnimada{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 40px;
+    height: 30px;
+    animation-name: nube;
+    animation:
+     move-nube 50s infinite alternate,
+     move-nube2 50s infinite alternate;
+}
+@keyframes move-nube {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateY(300px);
+    }
+}
+@keyframes move-nube2 {
+    100%{
+        transform:translateX(300PX) ;
+    }
+    0%{
+        transform: translateY(0);
+    }
+}
+.segundaNube{
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    animation-name: nubeB;
+    animation:
+    move-nubeB 60s infinite alternate,
+    move-nubeC 60s infinite alternate;
+}
+@keyframes move-nubeB {
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateY(320PX);
+    }
+    
+}
+@keyframes move-nubeC {
+    100%{
+        transform: translateX(320PX);
+    }
+    0%{
+        transform: translateY(0);
+    }
+    
+}
+.terceraNube{
+    position: absolute;
+    top:4%;
+    left: 50%;
+    animation-name: nubeD;
+    animation:
+    move-nubeE 70s infinite alternate,
+    move-nubeF 70s infinite alternate;
+}
+@keyframes move-nubeE {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translatey(500px);
+    }
+}
+@keyframes move-nubeF {
+    100%{
+        transform: translateX(500px);
+    }
+    0%{
+        transform: translateY(0);
+    }
+}
+.cuartaNube{
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    animation-name: nubeG;
+    animation: 
+    move-nubeH 50s infinite alternate,
+    move-nubeI 50s infinite alternate;
+}
+
+@keyframes move-nubeH {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateY(300px);
+    }
+}
+
+@keyframes move-nubeI {
+    100%{
+        transform: translateX(300px);
+    }
+    0%{
+        transform: translateY(0);
+    }
+}
+
+/*:::Boton abrir:::*/
+.boton{
+    padding: 40px;
+    background-color: #fff;
+}
+.boton label{
+    padding: 10px 15px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton label:hover{
+    background-color: #185E83;
+}
+/*:::Fin Boton:::*/
+
+/*:::Ventana:::*/
+#btn{
+    display: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn:checked ~ .container{
+    display: flex;
+}
+.content{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content h2{
+    margin-bottom: 15px;
+}
+.content p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content .btn-cerrar label:hover{
+    background-color:#185E83;
+}
+.cerrar{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana:::*/
+
